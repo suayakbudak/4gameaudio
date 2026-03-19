@@ -19,5 +19,3 @@ https://4gameaudio.com/
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
-
-## Project Structure
