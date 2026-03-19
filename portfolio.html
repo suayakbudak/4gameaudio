@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio – 4GameAudio | Game Audio Projects & Showreel</title>
+  <meta name="description" content="Explore our game audio portfolio featuring sound design, music composition, and audio implementation projects across various genres and platforms." />
+  <meta name="keywords" content="game audio portfolio, sound design showreel, video game music demo, game SFX examples, audio implementation samples, indie game audio, AAA game sound" />
+  <meta name="author" content="4GameAudio" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Portfolio – 4GameAudio" />
+  <meta property="og:description" content="Game audio portfolio: sound design, music composition, and audio implementation projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.4gameaudio.com/portfolio.html" />
+  <meta property="og:image" content="https://www.4gameaudio.com/logo.jpg" />
+  <link rel="canonical" href="https://www.4gameaudio.com/portfolio.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="logo.ico" />
+  <link rel="apple-touch-icon" href="logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Chakra+Petch:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      document.body.classList.add('loading');
+      window.addEventListener('DOMContentLoaded', function() {
+        const savedLang = localStorage.getItem('language') || 'en';
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            requestAnimationFrame(function() {
+              requestAnimationFrame(function() {
+                document.body.classList.remove('loading');
+              });
+            });
+          });
+        } else {
+          setTimeout(function() {
+            requestAnimationFrame(function() {
+              document.body.classList.remove('loading');
+            });
+          }, 100);
+        }
+      });
+    })();
+  </script>
+</head>
+<body data-page="portfolio">
+  <div class="custom-cursor" id="customCursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+  </div>
+  
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-frame">
+          <img src="dark.jpg" alt="4GameAudio" class="logo-img logo-dark" />
+          <img src="light.jpg" alt="4GameAudio" class="logo-img logo-light" />
+        </span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-i18n-key="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n-key="nav.about">About</a></li>
+          <li><a href="services.html" data-i18n-key="nav.services">Services</a></li>
+          <li><a href="portfolio.html" class="active" data-i18n-key="nav.portfolio">Portfolio</a></li>
+          <li><a href="contact.html" data-i18n-key="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <div class="lang-toggle-wrapper" id="langToggleWrapper">
+          <button type="button" class="lang-toggle" id="langToggle" aria-label="Toggle language">
+            <span class="lang-toggle-slider"></span>
+            <span class="lang-toggle-label lang-toggle-label-en">EN</span>
+            <span class="lang-toggle-label lang-toggle-label-tr">TR</span>
+          </button>
+        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <nav class="mobile-menu">
+      <ul>
+        <li><a href="index.html" data-i18n-key="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n-key="nav.about">About</a></li>
+        <li><a href="services.html" data-i18n-key="nav.services">Services</a></li>
+        <li><a href="portfolio.html" data-i18n-key="nav.portfolio">Portfolio</a></li>
+        <li><a href="contact.html" data-i18n-key="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Sağ sosyal bar + scroll to top -->
+  <div class="social-bar">
+    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+      </svg>
+    </a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+    </a>
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+      </svg>
+    </a>
+    <a href="https://store.steampowered.com" target="_blank" aria-label="Steam">
+      <i class="fa-brands fa-steam steam-icon"></i>
+    </a>
+    <div class="social-label" data-i18n-key="social.follow">Follow Us</div>
+    <div class="scroll-line"></div>
+    <div class="social-label scroll-top-label" data-i18n-key="social.scrollTop">Scroll to top</div>
+    <div class="scroll-top-btn" id="scrollTopBtn">
+      ↑
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero page-hero--portfolio">
+      <div class="page-hero-inner reveal">
+        <p class="section-kicker" data-i18n-key="portfolio.hero.kicker">Portfolio</p>
+        <h1 class="page-hero-title" data-i18n-key="portfolio.hero.title">Listen to some of our work.</h1>
+        <p class="page-hero-subtitle">
+          <span data-i18n-key="portfolio.hero.subtitle">
+            Selected projects across different genres and platforms.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal">
+      <div class="section-inner">
+        <div class="pill-row">
+          <button class="pill is-active" data-scroll="#credits" data-i18n-key="portfolio.pill.credits">Credits</button>
+          <button class="pill" data-scroll="#videos" data-i18n-key="portfolio.pill.videos">Videos</button>
+          <button class="pill" data-scroll="#music" data-i18n-key="portfolio.pill.music">Music</button>
+        </div>
+
+        <div class="portfolio-tab-content" id="credits" data-tab="credits">
+          <div class="section-header" style="margin-top: 3rem;">
+            <p class="section-kicker" data-i18n-key="portfolio.section.kicker">Selected work</p>
+            <h1 class="section-title" data-i18n-key="portfolio.section.title">
+            A few of the projects we’ve contributed to.
+            </h1>
+            <p class="section-subtitle" data-i18n-key="portfolio.section.subtitle">
+              Selected credits across games and platforms — from soundtrack to full audio production.
+            </p>
+          </div>
+  
+          <div class="portfolio-case-study-wrapper" style="margin-top: 3rem;">
+            <article class="portfolio-item">
+              <div class="portfolio-thumb" style="background-image: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3588490/840d222a83bc4aedb5b390ab02835042925e2427/header.jpg?t=1769715544');"></div>
+              <div class="portfolio-body">
+                <p class="portfolio-label" data-i18n-key="portfolio.item5.label">Steam / Multiplayer Card Game</p>
+                <h2 class="portfolio-title" data-i18n-key="portfolio.item5.title">Bogos Binted?</h2>
+                <p class="portfolio-meta" data-i18n-key="portfolio.item5.meta">
+                  Full audio production for a quirky alien card game. Original soundtrack, character voices, UI sound design, and Steam integration. Published on Steam with Very Positive reviews (682+ reviews).
+                </p>
+                <div style="margin-top: 0.75rem;">
+                  <a href="https://store.steampowered.com/app/3588490/Bogos_Binted/?l=turkish" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-color); text-decoration: none; font-size: 0.85rem;">
+                    <i class="fa-brands fa-steam steam-icon-small"></i>
+                    <span data-i18n-key="portfolio.item5.steam">View on Steam</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <div class="portfolio-bundles">
+              <p class="portfolio-bundles-title" data-i18n-key="portfolio.bundles.title">Available Steam bundles</p>
+              <ul>
+                <li class="bundle-item">
+                  <a href="https://store.steampowered.com/bundle/67583/Bogos_Binted_Dripped_Out_Edition/" target="_blank" rel="noopener noreferrer" data-i18n-key="portfolio.bundles.item1.name">
+                    Bogos Binted? Dripped Out Edition
+                  </a>
+                  <span class="bundle-note" data-i18n-key="portfolio.bundles.item1.note">Base game + Fashion Pack DLC</span>
+                </li>
+                <li class="bundle-item bundle-item-with-images">
+                  <a href="https://store.steampowered.com/bundle/57954/Bogos_Binted__Hoop_Fighters/" target="_blank" rel="noopener noreferrer" data-i18n-key="portfolio.bundles.item2.name">
+                    Bogos Binted? &amp; Hoop Fighters
+                  </a>
+                  <span class="bundle-note" data-i18n-key="portfolio.bundles.item2.note">Party bundle with Hoop Fighters</span>
+                  <div class="bundle-images">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3588490/233b515268848cdeb39eff9ded550ade9ade7ae3/capsule_184x69.jpg?t=1769715544" alt="Bogos Binted?" />
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2244520/1c57ca5c30146a8bd766ac3d8789a36d2aa7bced/capsule_184x69.jpg?t=1766132216" alt="Hoop Fighters" />
+                  </div>
+                </li>
+                <li class="bundle-item bundle-item-with-images">
+                  <a href="https://store.steampowered.com/bundle/57055/Bogos_Binted__Lost_Lullabies/" target="_blank" rel="noopener noreferrer" data-i18n-key="portfolio.bundles.item3.name">
+                    Bogos Binted? &amp; Lost Lullabies
+                  </a>
+                  <span class="bundle-note" data-i18n-key="portfolio.bundles.item3.note">Atmospheric horror + Bogos Binted?</span>
+                  <div class="bundle-images">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3588490/233b515268848cdeb39eff9ded550ade9ade7ae3/capsule_184x69.jpg?t=1769715544" alt="Bogos Binted?" />
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2903710/35cab44e13669339fbb769078050aa73f9e5c49a/capsule_184x69.jpg?t=1769624209" alt="Lost Lullabies" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-tab-content" id="videos" data-tab="videos" style="display: none;">
+          <div class="section-header reveal" style="margin-top: 3rem;">
+            <p class="section-kicker" data-i18n-key="portfolio.media.kicker">Portfolio</p>
+            <h2 class="section-title" data-i18n-key="portfolio.media.title">Videos & music.</h2>
+            <p class="section-subtitle" data-i18n-key="portfolio.media.subtitle">
+              Trailers and reels from our game audio work — sound design, music and in-game footage.
+            </p>
+          </div>
+
+          <div class="video-grid reveal" style="margin-top: 3rem;">
+            <div class="video-card" data-video="https://video.akamai.steamstatic.com/store_trailers/3588490/1526085590/55c1289c280fbb32cf927e006313ba00fc1c786d/1769589516/hls_264_master.m3u8?t=1769596679" data-steam-video="true" data-video-type="hls">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257274447/445d0de6e3d0f9405c0b157de340aac965ad362f/movie_600x337.jpg?t=1769596679" alt="Bogos Binted? Full Release - Launch Trailer" />
+              <div class="video-overlay">
+                <div class="play-circle">
+                  <div class="play-triangle"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-card" data-video="https://video.akamai.steamstatic.com/store_trailers/3588490/1715365997/db5c57c1133275db3db9d7d29b542d71b0128b41/1753226742/hls_264_master.m3u8?t=1753229771" data-steam-video="true" data-video-type="hls">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257172566/8f24176b426afc2f070a377d61a94797f0525ffd/movie_600x337.jpg?t=1753229771" alt="Bogos Binted? Early Access Trailer" />
+              <div class="video-overlay">
+                <div class="play-circle">
+                  <div class="play-triangle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Music Tab Content -->
+        <div class="portfolio-tab-content" id="music" data-tab="music" style="display: none;">
+          <div class="section-header" style="margin-top: 3rem;">
+            <p class="section-kicker" data-i18n-key="home.music.kicker">Featured</p>
+            <h2 class="section-title" data-i18n-key="home.music.title">Featured Music</h2>
+            <p class="section-subtitle" data-i18n-key="home.music.subtitle">
+              A selection of themes and in-game tracks from our projects.
+            </p>
+          </div>
+
+          <div class="music-player music-coming-soon" style="margin-top: 3rem;">
+            <div class="music-soon-overlay">
+              <span class="music-soon-text" data-i18n-key="portfolio.music.comingSoon">Coming Soon</span>
+              <p class="music-soon-subtitle" data-i18n-key="portfolio.music.comingSoonText">New tracks are on the way!</p>
+            </div>
+            <div class="music-progress-container" id="musicProgressContainer">
+              <div class="music-progress-bar" id="musicProgressBar">
+                <div class="music-progress-fill" id="musicProgressFill"></div>
+                <div class="music-progress-handle" id="musicProgressHandle"></div>
+              </div>
+              <div class="music-time-display">
+                <span id="musicCurrentTime">0:00</span>
+                <span id="musicTotalTime">0:00</span>
+              </div>
+            </div>
+            <p class="music-now" id="musicNow" data-i18n-key="music.player.default">Click a track to play</p>
+            <audio id="musicAudio" preload="metadata"></audio>
+            <ul class="music-track-list">
+              <li class="music-track music-track-disabled">
+              <span class="music-track-play-icon">▶</span>
+              <span class="music-track-title">Track 1</span>
+              <span class="music-track-length">--:--</span>
+            </li>
+            <li class="music-track music-track-disabled">
+              <span class="music-track-play-icon">▶</span>
+              <span class="music-track-title">Track 2</span>
+              <span class="music-track-length">--:--</span>
+            </li>
+            <li class="music-track music-track-disabled">
+              <span class="music-track-play-icon">▶</span>
+              <span class="music-track-title">Track 3</span>
+              <span class="music-track-length">--:--</span>
+            </li>
+            <li class="music-track music-track-disabled">
+              <span class="music-track-play-icon">▶</span>
+              <span class="music-track-title">Track 4</span>
+              <span class="music-track-length">--:--</span>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="video-modal-backdrop" id="videoModal">
+    <button class="video-modal-close" id="videoModalClose" aria-label="Close video">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <div class="video-modal">
+      <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen style="display: none;"></iframe>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+  <footer>
+    <div>
+      <span data-i18n-key="footer.text">&copy; 2025 4GAMEAUDIO. All rights reserved.</span>
+    </div>
+    <div class="footer-thanks">
+      <span data-i18n-key="footer.thanks">Special thanks to:</span>
+      <span class="magic" data-i18n-key="footer.credits">
+        <span class="magic-star"><svg viewBox="0 0 512 512"><path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"/></svg></span>
+        <span class="magic-star"><svg viewBox="0 0 512 512"><path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"/></svg></span>
+        <span class="magic-star"><svg viewBox="0 0 512 512"><path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"/></svg></span>
+        <span class="magic-text">SUAY AKBUDAK</span>
+      </span>
+      <span class="footer-separator">&</span>
+      <span class="magic" data-i18n-key="footer.credits2">
+        <span class="magic-star"><svg viewBox="0 0 512 512"><path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"/></svg></span>
+        <span class="magic-star"><svg viewBox="0 0 512 512"><path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"/></svg></span>
+        <span class="magic-star"><svg viewBox="0 0 512 512"><path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"/></svg></span>
+        <span class="magic-text">SELİN DEMİR</span>
+      </span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
